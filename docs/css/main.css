@@ -1,0 +1,89 @@
+/* Generales */
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn:active {
+  box-shadow: none !important;
+}
+
+h2 {
+  color:#1ebba3;
+}
+
+.imagenes {
+  max-width: 100%;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+@media (max-width: 992px) {
+.desaparecen {
+  display: none;
+}
+}
+
+@media (min-width: 992px) {
+  .aparecen {
+    display: none;
+  }
+  }
+
+ol {
+  counter-reset: item;
+
+}
+li {
+  display: block;
+}
+
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+
+/* Inicio */
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/clase-con-alumnos-y-profesora.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background: rgba(0, 0 ,0, 0.5) !important;
+  }
+
+@media (min-width: 768px) {
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover { 
+  color:#1ebba3;
+}
+
+header .container {
+  position: absolute;
+  top: 44%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+header .container h1 {
+  letter-spacing: 0.1em;
+}
+
+/* Inspiración */
