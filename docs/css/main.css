@@ -29,19 +29,6 @@ h2 {
   }
   }
 
-ol {
-  counter-reset: item;
-
-}
-li {
-  display: block;
-}
-
-li:before {
-  content: counters(item, ".") " ";
-  counter-increment: item;
-}
-
 /* Inicio */
 
 header {
@@ -86,4 +73,24 @@ header .container h1 {
   letter-spacing: 0.1em;
 }
 
-/* Inspiración */
+/* Datos */
+
+.lista-datos ol {
+  counter-reset: item;
+}
+
+.lista-datos li {
+  display: block;
+}
+
+.lista-datos li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+
+/* Footer */
+.enlace-footer {
+  color: white;
+  text-decoration: underline;
+}
+/* Footer */
