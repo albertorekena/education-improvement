@@ -14,6 +14,8 @@ h2 {
 
 .imagenes {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
   border: 1px solid rgba(0,0,0,.125);
 }
 
@@ -73,6 +75,15 @@ header .container h1 {
   letter-spacing: 0.1em;
 }
 
+/* Autores */
+
+.card {
+max-width: 18rem;
+margin: 0 auto;
+}
+
+/* Autores */
+
 /* Datos */
 
 .lista-datos ol {
@@ -87,6 +98,19 @@ header .container h1 {
   content: counters(item, ".") " ";
   counter-increment: item;
 }
+
+.tachado {
+  text-decoration: line-through;
+}
+
+/* Metodología */
+
+figure {
+  display: block !important;
+  margin: 0 auto;
+}
+
+/* Metodología */
 
 /* Footer */
 .enlace-footer {
