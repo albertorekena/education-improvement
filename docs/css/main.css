@@ -16,7 +16,6 @@ h2 {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  border: 1px solid rgba(0,0,0,.125);
 }
 
 @media (max-width: 992px) {
