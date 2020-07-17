@@ -1,13 +1,5 @@
 /* Generales */
 
-/* .btn:focus {
-  box-shadow: none;
-}
-
-.btn:active {
-  box-shadow: none !important;
-} */
-
 h2 {
   color:#1ebba3;
 }
@@ -98,6 +90,14 @@ header .container h1 {
 .boton:focus {
   outline: 0;
 }
+
+/* Introducción */
+
+#introduccion {
+  clear: both;
+}
+
+/* Introducción */
 
 /* Autores */
 
