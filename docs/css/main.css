@@ -1,12 +1,12 @@
 /* Generales */
 
-.btn:focus {
+/* .btn:focus {
   box-shadow: none;
 }
 
 .btn:active {
   box-shadow: none !important;
-}
+} */
 
 h2 {
   color:#1ebba3;
@@ -72,6 +72,31 @@ header .container {
 
 header .container h1 {
   letter-spacing: 0.1em;
+}
+
+.boton {
+  background-color: transparent;
+  color: #f8f9fa;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  padding: .5rem 1rem;
+  border: 2px solid #f8f9fa;
+  border-radius: .3rem;
+}
+
+.boton:hover {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.boton:active {
+  color: #1ebba3;
+  border: 2px solid #1ebba3;
+  outline: 0;
+}
+
+.boton:focus {
+  outline: 0;
 }
 
 /* Autores */
