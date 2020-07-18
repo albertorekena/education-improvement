@@ -34,26 +34,6 @@ header {
   background-attachment: fixed;
 }
 
-.navbar {
-  background: rgba(0, 0 ,0, 0.5) !important;
-  }
-
-@media (min-width: 768px) {
-.navbar-expand-md .navbar-nav .nav-link {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover { 
-  color:#1ebba3;
-}
-
 header .container {
   position: absolute;
   top: 44%;
@@ -71,7 +51,7 @@ header .container h1 {
   color: #f8f9fa;
   font-size: 1.25rem;
   letter-spacing: 0.1em;
-  padding: .5rem 1rem;
+  padding: 8px 1rem;
   border: 2px solid #f8f9fa;
   border-radius: .3rem;
 }
@@ -82,22 +62,85 @@ header .container h1 {
 }
 
 .boton:active {
-  color: #1ebba3;
-  border: 2px solid #1ebba3;
-  outline: 0;
+  color: #f8f9fa;
+  font-weight: 600;
+  border: 4px solid #f8f9fa;
+  padding: 6px 1rem;
 }
 
-.boton:focus {
-  outline: 0;
+/* Timeline */
+
+.timeline {
+  position: relative;
+  margin-top: 40px;
 }
+
+.timeline::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #212529;
+}
+
+.timeline ul {
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.timeline ul li:nth-child(odd) {
+  float:left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(odd)::before {
+  content: '';
+  background: #1ebba3;
+  position: absolute;
+  top: 24px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #1ebba3;
+}
+
+.timeline ul li:nth-child(even) {
+  float:right;
+  text-align: left;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even)::before {
+  content: '';
+  background: #1ebba3;
+  position: absolute;
+  top: 24px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #1ebba3;
+}
+
+/* .timeline-texto {
+  color:#1ebba3;
+} */
 
 /* Introducción */
 
 #introduccion {
   clear: both;
 }
-
-/* Introducción */
 
 /* Autores */
 

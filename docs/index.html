@@ -10,26 +10,10 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
-<body data-spy='scroll' data-target=".navbar">
+<body>
 <!-- Header -->
-    <header id="inicio">
-        <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#introduccion">INTRODUCCIÓN</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#inspiracion">INSPIRACIÓN</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#autores">AUTORES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#datos">DATOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#metodologia">METODOLOGÍA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#conclusiones">CONCLUSIONES</a></li>
-                </ul>
-            </div>
-        </nav> -->
-        <div class="container d-flex flex-column align-items-center header-text">
+    <header>
+        <div class="container d-flex flex-column align-items-center aparicion-texto">
             <div class="row py-2 text-center text-white">
                 <h1 class="h1">MEJORA DE LA EDUCACIÓN</h1>
             </div>
@@ -37,14 +21,42 @@
                 <p class="h2">SaturdaysAI</p>
             </div>
             <div class="row py-2 text-center text-white">
-                <a class="mt-3 boton" href="#introduccion">¡COMENZAR!</a>
+                <a class="mt-3 boton" href="#timeline">¡COMENZAR!</a>
             </div>
         </div>
     </header>
-    <div id="introduccion"></div>
+    <div id="timeline"></div>
 <!-- Header -->
+<!-- Timeline -->
+<div class="container mt-5">
+    <div class="title text-center"><h2>Índice</h2></div>
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="timeline-texto h5">Introducción</div>
+            </li>
+            <li>
+                <div class="timeline-texto h5">Inspiración</div>
+            </li>
+            <li>
+                <div class="timeline-texto h5">Autores</div>
+            </li>
+            <li>
+                <div class="timeline-texto h5">Datos</div>
+            </li>
+            <li>
+                <div class="timeline-texto h5">Metodología</div>
+            </li>
+            <li>
+                <div class="timeline-texto h5">Conclusiones</div>
+            </li>
+        </ul>
+        <div style="clear:both;"></div>
+    </div>
+</div>
+<!-- Timeline -->
 <!-- Introducción -->
-<div class="container mt-5" id="inspiracion">
+<div class="container mt-5" id="introduccion">
     <div class="row-12 text-center">
         <h2>Introducción</h2>
         <p class="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi itaque quaerat deserunt? Quibusdam nam, porro quasi labore quo veritatis est delectus alias sint hic rem nobis accusantium ipsam esse saepe.</p>
@@ -302,7 +314,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script>
     window.sr = ScrollReveal();
-        sr.reveal('.header-text',{
+        sr.reveal('.aparicion-texto',{
             duration: 2000,
             origin: 'bottom'
         });
