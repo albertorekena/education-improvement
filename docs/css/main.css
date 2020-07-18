@@ -36,7 +36,7 @@ header {
 
 header .container {
   position: absolute;
-  top: 44%;
+  top: 36%;
   left: 0;
   right: 0;
   margin: auto;
@@ -132,14 +132,14 @@ header .container h1 {
   box-shadow: 0 0 3px #1ebba3;
 }
 
-/* .timeline-texto {
-  color:#1ebba3;
-} */
-
 /* Introducción */
 
 #introduccion {
   clear: both;
+}
+
+#introduccion p {
+  line-height: 1.5em;
 }
 
 /* Autores */
