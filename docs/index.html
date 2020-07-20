@@ -206,7 +206,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 mt-4">
-                <p>Las variables tachadas NO han sido utilizadas para la realización de este proyecto, pues chocaban con el objetivo de éste que es, como se ha mencionado anteriormente, el de averiguar cuales son los factores ambientales y los hábitos que más influyen tanto positiva como negativamente en el desarrollo del estudiante. Las notas que el alumno ha sacado en el 1er o en el 2do cuatrimestre aportan evidentemente mayor precisión al modelo, pero no son útiles a la hora de averiguar cuáles son las acciones más efectivas para mejorar el rendimiento académico.</p>
+                <p>Las variables tachadas NO han sido utilizadas para la realización de este proyecto, pues chocaban con el objetivo de éste que es, como se ha mencionado anteriormente, el de averiguar cuáles son los factores ambientales y los hábitos que más influyen tanto positiva como negativamente en el desarrollo del estudiante. Las notas que el alumno ha sacado en el 1er o en el 2do cuatrimestre aportan evidentemente mayor precisión al modelo, pero no son útiles a la hora de averiguar cuáles son las acciones más efectivas para mejorar el rendimiento académico.</p>
             </div>
         </div>
     </div>
@@ -220,44 +220,82 @@
     </div>
     <div class="row">
         <div class="col-md-12 mt-4">
-            <h3 class="h4 mb-4">3 Enfoques</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi nostrum nesciunt exercitationem, itaque ratione sint quisquam assumenda. A quos provident sed laboriosam. Quod repellendus est vero, quibusdam facilis porro:</p>
+            <h3 class="h4 mb-4">3 Enfoques</h3>
+            <p>Inicialmente, se han utilizado 3 estrategias para trabajar los datos y extraer conclusiones.</p>
+            <p>Los enlaces que aperecen en las siguientes secciones se corresponden con el dataset <a href="https://github.com/albertorekena/education-improvement/blob/master/student-por.csv" target="_blank">student-por.csv</a>. Los notebooks equivalentes que corresponden al dataset <a href="https://github.com/albertorekena/education-improvement/blob/master/student-mat.csv" target="_blank">student-por.csv</a> se pueden encontrar en <a href="https://github.com/albertorekena/education-improvement/tree/master/mathematics" target="_blank">su carpeta correspondiente en el repositorio</a>.</p>
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-lg-6">
+        <div class="col-lg-6 desaparecen">
             <figure class="figure d-block text-center">
                 <img src="img/resultados-portugues-regresion-lineal.png" class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center">Resultados del modelo Regresión Lineal con RFE.</figcaption>
             </figure>
         </div>
-        <div class="col-lg-6 mt-5">
-            <h3 class="h4 mb-4">Modelado de Regresión</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis officia cumque odio quo tempore impedit commodi adipisci, eum consequuntur! Eveniet, nulla beatae magnam at optio animi dolorem cupiditate maxime delectus?</p>
+        <div class="col-lg-6">
+            <h4 class="h5 mb-4">1. Modelado de Regresión</h4>
+            <p><a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/02.-portuguese-modelling-regression.ipynb" target="_blank">Hemos utilizado</a> los modelos LinearRegression, DecisionTreeRegressor, RandomForestRegressor, xgboost además de una Red Neuronal. Hemos trabajado con <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/04.-portuguese-rfe.ipynb" target="_blank">RFE (Recursive Feature Elimination)</a> para eliminar ruido que pudieran aportar las variables. Y, también hemos realizado un ensamblado de modelos con una configuración tipo <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/02.-portuguese-modelling-regression.ipynb" target="_blank">Stacking</a>.</p>
+            <p>En los resultados se puede observar que, con la información disponible, <strong>los modelos intuyen cuál puede ser la nota final del alumno</strong>. Al mismo tiempo se hace evidente que hace falta más información para conseguir más precisión.</p>
+        </div>
+        <div class="col-lg-6 aparecen mt-4">
+            <figure class="figure d-block text-center">
+                <img src="img/resultados-portugues-regresion-lineal.png" class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center">Resultados del modelo Regresión Lineal con RFE.</figcaption>
+            </figure>
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-lg-6">
+        <div class="col-lg-6 desaparecen">
             <figure class="figure d-block text-center">
                 <img src="img/resultados-matematicas-clustering.png" class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center">Resultados del clustering con KMeans.</figcaption>
             </figure>
         </div>
-        <div class="col-lg-6 mt-5">
-            <h3 class="h4 mb-4">Clustering</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis officia cumque odio quo tempore impedit commodi adipisci, eum consequuntur! Eveniet, nulla beatae magnam at optio animi dolorem cupiditate maxime delectus?</p>
+        <div class="col-lg-6">
+            <h4 class="h5 mb-4">2. Clustering</h4>
+            <p>Aplicamos los algoritmos <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/03.-portuguese-clustering.ipynb" target="_blank">KMeans</a> y <a href="https://github.com/albertorekena/education-improvement/blob/master/other-notebooks/03.-portuguese-clustering-dbscan-range_G3-10-repaired-G3-0-values.ipynb" target="_blank">DBSCAN</a> para hacer clústers de los alumnos para encontrar el mayor número de rasgos que identificaran a estos con notas.</p>
+            <p>También se han generado datos (estudiantes) de manera sintética con <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/07.-portuguese-smote.ipynb" target="_blank">SMOTE (Synthetic Minority Oversampling Technique)</a> para mejorar los resultados de la segmentación.</p>
+            <p>En este apartado es donde más se ha hecho evidente que una nueva recolección de datos podrían aportar mucho valor al trabajo final.</p>
+        </div>
+        <div class="col-lg-6 aparecen mt-4">
+            <figure class="figure d-block text-center">
+                <img src="img/resultados-matematicas-clustering.png" class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center">Resultados del clustering con KMeans.</figcaption>
+            </figure>
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-lg-6">
+        <div class="col-lg-6 desaparecen">
             <figure class="figure d-block text-center">
                 <img src="img/resultados-portugues-clasificacion.png" class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center">Resultados del modelo Random Forest Classifier.</figcaption>
             </figure>
         </div>
-        <div class="col-lg-6 mt-5">
-            <h3 class="h4 mb-4">Modelado de Clasificación</h1>
-            <p id="conclusiones">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis officia cumque odio quo tempore impedit commodi adipisci, eum consequuntur! Eveniet, nulla beatae magnam at optio animi dolorem cupiditate maxime delectus?</p>
+        <div class="col-lg-6">
+            <h4 class="h5 mb-4">3. Modelado de Clasificación</h4>
+            <p id="conclusiones">Los algoritmos de clasificación son los que <strong>mejores resultados han aportado</strong>. <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/08.-portuguese-modelling-classification.ipynb" target="_blank">Hemos trabajado</a> con LogisticRegression, SVC, KNeighborsClassifier, DecisionTreeClassifier, RandomForestClassifier y XGBClassifier. También, como en el caso del modelado de regresión, hemos creado un ensamblado de modelos con una tipología <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/08.-portuguese-modelling-classification.ipynb" target="_blank">Stacking</a>. Y, además, <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/09.-portuguese-isolation_forest.ipynb" target="_blank" rel="noopener noreferrer">hemos utilizado IsolationForest</a> para detectar registros que pudieran estar restando precisión.</p>
+        </div>
+        <div class="col-lg-6 aparecen mt-4">
+            <figure class="figure d-block text-center">
+                <img src="img/resultados-portugues-clasificacion.png" class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center">Resultados del modelo Random Forest Classifier.</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <h3 class="h4 mb-4">Una Estrategia Diferente: Scoring</h1>
+            <p>Sin perder de vista nuestro objetivo final, y ante la limitación que teníamos con los datos, que nos impedían conseguir una mayor precisión con los algoritmos, <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/10.-portuguese-feature-importance.ipynb" target="_blank">decidimos crear un Scoring</a> ad hoc. Con ello <strong>podemos detectar cuáles son las variables que más influyen</strong> en el rendimiento de los estudiantes, teniendo en cuenta los modelos que "mejor comprenden la información" de la que disponemos, independientemente de si son de regresión o clasificación.</p>
+            <p>Son 3 las variables que más destacan: la formación de los padres, la motivación del alumno y el consumo de alcohol. Estos resultados son similares a los que <a href="https://github.com/albertorekena/education-improvement/blob/master/portuguese/01.-portuguese-eda.ipynb" target="_blank">encontramos con los coeficientes de correlación de Pearson de las distintas variables con la nota final</a>.</p>
+            <blockquote class="blockquote text-center mt-5"><i>"Las variables que más destacan: la formación de los padres, la motivación del alumno y el consumo de alcohol."</i></blockquote>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mt-4">
+            <figure class="figure d-block text-center">
+                <img src="img/matematicas-feature-importance.png" class="figure-img img-fluid imagenes">
+                <figcaption class="figure-caption text-center">Importancia de las variables en distintos modelos para el dataset de matemáticas.</figcaption>
+            </figure>
         </div>
     </div>
 </div>
@@ -267,20 +305,6 @@
     <div class="row">
         <div class="col-12 text-center">
             <h2>Conclusiones</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 mt-4">
-            <h3 class="h4 mb-4">Una estrategia diferente</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi nostrum nesciunt exercitationem, itaque ratione sint quisquam assumenda. A quos provident sed laboriosam. Quod repellendus est vero, quibusdam facilis porro:</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 mt-4">
-            <figure class="figure d-block text-center">
-                <img src="img/matematicas-feature-importance.png" class="figure-img img-fluid imagenes">
-                <figcaption class="figure-caption text-center">Importancia de las variables en distintos modelos para el dataset de matemáticas.</figcaption>
-            </figure>
         </div>
     </div>
     <div class="row mt-3">
