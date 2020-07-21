@@ -4,6 +4,10 @@ h2 {
   color:#1ebba3;
 }
 
+.h4,.h5 {
+  line-height: 1.5em;
+}
+
 .imagenes {
   max-width: 100%;
   display: block;
@@ -138,10 +142,6 @@ header .container h1 {
   clear: both;
 }
 
-#introduccion p {
-  line-height: 1.5em;
-}
-
 /* Autores */
 
 .card {
@@ -170,11 +170,23 @@ margin: 0 auto;
   text-decoration: line-through;
 }
 
-/* Metodología */
+/* Propuesta */
 
+@media (min-width: 992px) {
+  .imagen-universidad-queen {
+    max-width: 70%;
+  }
+}
 
+/* Propuesta */
 
-/* Metodología */
+/* Futuras Líneas */
+
+.futuras-lineas li {
+  margin-top: 20px;
+}
+
+/* Futuras Líneas */
 
 /* Footer */
 .enlace-footer {
