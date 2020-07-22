@@ -17,14 +17,15 @@ h2 {
 @media (max-width: 992px) {
 .desaparecen {
   display: none;
-}
+  position: relative;
+  }
 }
 
 @media (min-width: 992px) {
   .aparecen {
     display: none;
   }
-  }
+}
 
 /* Inicio */
 
@@ -171,6 +172,16 @@ margin: 0 auto;
 }
 
 /* Acción */
+
+/* Metodología */
+
+.centrado-vertical {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+/* Metodología */
 
 @media (min-width: 992px) {
   .imagen-universidad-queen {
